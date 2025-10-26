@@ -1,13 +1,12 @@
 import { Router } from "express";
-
+import { crearProducto, prueba } from "../controllers/tareas.controllers.js";
 
 
 
 const router = Router()
 
 
-router.route('/').get((req, res)=>{
-    res.send('Prueba desde el controlador')
-})
+router.route('/test').get(prueba)
+router.route('/').post(crearProducto)
 
 export default router

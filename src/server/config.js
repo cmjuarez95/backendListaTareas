@@ -24,7 +24,7 @@ export default class Server{
         //configurar un archivo estatico
         const __dirname = dirname(fileURLToPath(import.meta.url));
         console.log(__dirname)
-        console.log(__dirname + "/../../public")
+        console.log(__dirname + "../../public")
         this.app.use(express.static(__dirname + "/../../public"))
     }
 

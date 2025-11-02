@@ -14,3 +14,7 @@ const tareaSchema = new Schema({
         timestamps:true
     }
 );
+
+const Tarea = mongoose.model('tarea', tareaSchema)
+
+export default Tarea

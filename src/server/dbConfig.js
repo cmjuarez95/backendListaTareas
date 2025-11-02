@@ -1,11 +1,12 @@
-import mongoose, { mongo } from "mongoose";
+import mongoose from "mongoose";
 
 try {
-    mongoose.connect(process.env.MONGODB).then(()=>{
-        console.info("BD conectada con exito")
-    })
-
-}catch(error){
+    mongoose.connect(process.env.MONGODB).then(()=>
+        console.info("BD: Conexion exitosa")
+        
+    )
+    
+} catch (error) {
     console.error(error)
 }
 
